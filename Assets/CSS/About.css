@@ -1,0 +1,210 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+
+}
+
+body {
+
+    background-color: #DDD0C8;
+
+}
+
+header {
+
+    position: sticky;
+    top: 0;
+    background-color: #DDD0C8;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+}
+
+.container {
+
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.logo h2 {
+
+    font-family: 'Rhodium Libre';
+    font-size: 1.6rem;
+
+}
+
+nav ul {
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+nav ul li {
+
+    margin: 0 0.7rem;
+
+}
+
+#orange-border {
+
+    background-color: #fff;
+    border-bottom: 3px solid orangered;
+
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: 0.4s;
+    padding: 0.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "poppins";
+
+}
+
+nav ul li a:hover {
+
+    background-color: #fff;
+
+}
+
+/* Main Content */
+
+.content {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+
+}
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    width: 60%;
+    background-color: #fff;
+    border: 5px solid black;
+    margin: 15px;
+    border-radius: 8px;
+    font-family: 'poppins';
+
+}
+
+.main h1 {
+
+    width: 90%;
+    text-align: center;
+    font-family: 'Rhodium Libre';
+    margin: 10px auto;
+    border-bottom: 5px solid black;
+    font-size: 2.2rem;
+
+}
+
+.main p {
+
+    font-family: 'poppins';
+    font-size: 1.5rem;
+    margin: 10px 10px;
+
+}
+
+.text {
+
+    font-family: inherit;
+    font-weight: 700;
+    color: red;
+
+}
+
+#orange-border {
+
+    background-color: #fff;
+    border-bottom: 3px solid orangered;
+
+}
+
+@media (max-width: 1005px) {
+
+    nav {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    nav ul li {
+
+        margin: 10px auto;
+
+    }
+
+    nav ul li a {
+
+        font-size: 1rem;
+
+    }
+
+    .logo h2 {
+
+        font-size: 1.4rem;
+
+    }
+
+    .main {
+
+        width: 100%;
+        margin: 0 8px;
+
+    }
+
+    .main p {
+
+        font-size: 1.1rem;
+
+    }
+
+}

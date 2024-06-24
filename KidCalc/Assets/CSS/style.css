@@ -1,0 +1,381 @@
+@import url(green-theme.css);
+@import url(Orange-theme.css);
+@import url(red-theme.css);
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+
+}
+
+body {
+
+    background-color: orangered;
+
+}
+
+button {
+
+    cursor: pointer;
+
+}
+
+header {
+
+    display: grid;
+    grid-template-areas: "none header none";
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: orangered;
+
+}
+
+header h1 {
+
+    width: fit-content;
+    grid-area: header;
+    font-family: "Rhodium Libre";
+    font-size: 2.2rem;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: max-content;
+    margin: 0 auto;
+    border: 4px solid black;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.user-information {
+
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    width: 90%;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    padding: 12px;
+
+}
+
+.userInfo {
+
+    margin: 2px auto;
+    text-align: center;
+    width: 80%;
+    border-radius: 3px;
+    padding: 8px 0;
+    font-size: 1rem;
+    border: 2px solid orangered;
+
+}
+
+#userAge {
+
+    margin-left: 20px;
+
+}
+
+label {
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+#menu {
+
+    margin-left: 40px;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-top: 2px;
+    border: 2px solid orangered;
+
+}
+
+.calculator {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border: 4px solid black;
+    padding: 12px;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+
+}
+
+.calculator h2 {
+
+    color: orangered;
+
+}
+
+.math-operations {
+
+    text-align: center;
+    width: 100%;
+
+}
+
+.calculations {
+
+    margin-top: 4px;
+    width: 90%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 2px solid orangered;
+
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: fit-content;
+    margin-top: 0.5rem;
+    gap: 0.6rem;
+
+}
+
+.calculator-button {
+
+    padding: 2.2rem 2.8rem;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    transition: 0.2s;
+    background-color: orangered;
+
+}
+
+.buttons {
+
+    display: flex;
+    width: 64.85%;
+    justify-content: space-between;
+
+}
+
+input[type="submit"],
+input[type="reset"] {
+
+    margin-top: 0.5rem;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    width: 80%;
+    border-radius: 6px;
+
+}
+
+#special {
+
+    width: 100%;
+
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+
+    color: black;
+    transform: scaleY(1.1);
+    background-color: orangered;
+    box-shadow: 0 0 10px orangered;
+
+}
+
+.calculator-button:hover {
+
+    transform: scale(1.1);
+    border: 2px solid black;
+    background-color: gold;
+
+}
+
+.info-bar {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+    border: 4px solid black;
+    width: 85%;
+    border-radius: 8px;
+
+}
+
+.images {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.images h2 {
+
+    font-family: "Permanent Marker";
+    color: orchid;
+
+}
+
+.name {
+
+    color: cornflowerblue;
+
+}
+
+#dino-1 {
+
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    transform: scaleX(-1);
+    margin-left: 5rem;
+
+}
+
+#dino-2 {
+
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 5rem;
+
+}
+
+@media (max-width: 500px) {
+
+    #userAge {
+
+        margin: 0;
+
+    }
+
+    .userInfo {
+
+        width: 100%;
+
+    }
+
+    #menu {
+
+        margin-left: 0;
+
+    }
+
+    .grid-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .calculations {
+
+        width: 100%;
+
+    }
+
+    #dino-1 {
+
+        margin-left: 0;
+        max-height: 35px;
+        max-width: 35px;
+
+    }
+
+    #dino-2 {
+
+        margin-right: 0;
+        max-height: 40px;
+        max-width: 40px;
+
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 610px) {
+
+    #dino-1,
+    #dino-2 {
+
+        max-height: 60px;
+        max-width: 60px;
+
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 850px) {
+
+    #userAge {
+
+        margin: 0;
+
+    }
+
+    .userInfo {
+
+        width: 100%;
+
+    }
+
+    #menu {
+
+        margin-left: 0;
+
+    }
+
+    .grid-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .calculations {
+
+        width: 100%;
+
+    }
+
+    #dino-1 {
+
+        margin-left: 0.5rem;
+
+    }
+
+    #dino-2 {
+
+        margin-right: 0.5rem;
+
+    }
+
+}
